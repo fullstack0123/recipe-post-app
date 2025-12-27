@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h2>ログアウトしますか？</h2>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">
+        ログアウト
+    </button>
+</form>
+{% endblock %}

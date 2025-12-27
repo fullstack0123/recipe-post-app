@@ -1,0 +1,14 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "testuser",
+      "password": "pbkdf2_sha256$...",
+      "email": "test@example.com",
+      "is_staff": true,
+      "is_superuser": false,
+      "is_active": true
+    }
+  }
+]
