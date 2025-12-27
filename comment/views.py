@@ -1,11 +1,8 @@
-# from django.shortcuts import render
-
-from django.shortcuts import redirect
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from comment.forms import CommentForm
 
-# Create your views here.
-
+# コメント作成ビュー（既存）
 def comment_create(request):
     recipe_id = request.POST.get("recipe")
     content = request.POST.get("content")
@@ -21,4 +18,6 @@ def comment_create(request):
 
     return redirect("recipe:detail", pk=recipe_id)
 
-
+# トップページビュー（追加）
+def index(request):
+    return render(request, 'index.html')
