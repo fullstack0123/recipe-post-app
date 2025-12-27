@@ -18,9 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
+from comment import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('comment/', include('comment.urls')),
+    path('staffroom/', include('staffroom.urls')),
+    path('', views.index, name='home'),  # トップページ
 ]
 
 if settings.DEBUG:
