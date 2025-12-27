@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-zj*e6b@vmu$dh=m5jyb(u8rn9$4kb4)f3kczy1qlhms&psu+vc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['recipe-post-app-7u6m.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
