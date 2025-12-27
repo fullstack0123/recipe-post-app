@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('comment/', include('comment.urls')),
     path('staffroom/', include('staffroom.urls')),
-    path('', views.index, name='home'),  # トップページ
+    path('', views.index, name='index'),  # トップページ
 ]
 
 if settings.DEBUG:
